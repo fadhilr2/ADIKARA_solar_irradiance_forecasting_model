@@ -20,7 +20,7 @@ import pandas as pd
 from xgboost import XGBRegressor
 
 # ---- settings you may change -------------------------------------------
-RAW_DIR = sys.argv[1] if len(sys.argv) > 1 else "../data_collection/data/raw"
+RAW_DIR = sys.argv[1] if len(sys.argv) > 1 else "../data/raw"  
 OUT_DIR = os.path.join(os.path.dirname(RAW_DIR.rstrip("/")), "selected")
 TARGET_NAME = "+0_+0"          # the file point_+0_+0.csv is P
 TOP_K = 3                      # how many neighbors to keep
